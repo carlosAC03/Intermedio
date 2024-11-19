@@ -1,94 +1,67 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Propiedad padding</title>
-    <link rel="stylesheet" href="styles.css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Enlaces</title>
     <style>
-      .visible {
-        background-color: lightyellow;
-        width: 150px;
-        height: 150px;
-        overflow: visible; /*Contenido sale
-del elemento y es completamente
-visible.*/
-      }
-      .scroll {
-        background-color: lightgreen;
-        width: 150px;
-        height: 150px;
-        overflow: scroll; /*Muestra una
-barra de scroll (horizontal y
-vertical) cuando los contenidos no
-caben en el contenedor.*/
-      }
-      .hidden {
-        background-color: lightblue;
-        width: 150px;
-        height: 150px;
-        overflow: hidden; /*Contenido que
-sale del contenedor padre se oculta y
-no se muestran barras de scroll. */
-      }
-      .auto {
-        background-color: lightgrey;
-        width: 150px;
-        height: 150px;
-        overflow: auto;
-      }
-      /*Ejemplo de overflow:hidden con
-floats*/
-      .auto-img {
-        background-color: lightgrey;
-        overflow: hidden;
-      }
-      .auto-img img {
-        float: left;
-        max-height: 300px;
-      }
+         body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
     </style>
-  </head>
-  <body>
-    <h1>Propiedad overflow</h1>
-    <h2>overflow: visible (default):</h2>
-    <div class="visible">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div>
-    <br /><br />
-    <h2>overflow: scroll</h2>
-    <div class="scroll">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    </div>
-    <h2>overflow: hidden</h2>
-    <div class="hidden">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    </div>
-    <h2>overflow: auto con scroll</h2>
-    <div class="auto">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    </div>
-    <h2>overflow: hidden con floats</h2>
-    <p>
-      En este caso la imagen excede el contenedor y tiene la propiedad float:
-      left. Al establecer la propiedad "overflow: auto o hidden" conseguimos que
-      el contenido no desborde el contenedor.
-    </p>
-    <div class="auto-img">
-      <img src="https://openclipart.org/image/400px/260112" alt="Logo" />
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    </div>
-  </body>
+</head>
+<body>
+    <h1>Lista de Páginas</h1>
+    <ul>
+        <li><a href="ejemplo1.html">Página 1</a></li>
+        <li><a href="ejemplo2.html">Página 2</a></li>
+        <li><a href="ejemplo3.html">Página 3</a></li>
+        <li><a href="ejemplo4.html">Página 4</a></li>
+        <li><a href="ejemplo5.html">Página 5</a></li>
+        <li><a href="ejemplo6.html">Página 6</a></li>
+        <li><a href="ejemplo7.html">Página 7</a></li>
+        <li><a href="ejemplo8.html">Página 8</a></li>
+        <li><a href="ejemplo9.html">Página 9</a></li>
+        <li><a href="ejemplo10.html">Página 10</a></li>
+        <li><a href="ejemplo11.html">Página 11</a></li>
+        <li><a href="ejemplo12.html">Página 12</a></li>
+        <li><a href="ejemplo13.html">Página 13</a></li>
+        <li><a href="ejemplo14.html">Página 14</a></li>
+        <li><a href="ejemplo15.html">Página 15</a></li>
+        <li><a href="ejemplo16.html">Página 16</a></li>
+        <li><a href="ejemplo17.html">Página 17</a></li>
+    </ul>
+</body>
 </html>
